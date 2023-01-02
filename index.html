@@ -26,7 +26,7 @@
         <div class="site-nav">
           <h2 class="logo"><span class="blue">Web</span>Studio</h2>
           <div class="nav-main">
-            <a class="header-nav" href="index.html">Agencja</a>
+            <a class="header-nav nav-position" href="index.html">Agencja </a>
             <a class="header-nav" href="portfolio.html">Portfolio</a>
             <a class="header-nav" href="portfolio.html">Kontakt</a>
           </div>
@@ -52,8 +52,9 @@
       <section class="background-img billboard">
         <div>
           <h1>EFEKTYWNE ROZWIĄZANIA<br />DLA WASZEGO BIZNESU</h1>
-          <button class="order-service" type="button">Zamów usługe</button>
-        </div>
+          <button data-modal-open class="order-service" type="button">Zamów usługe</button>
+
+          
       </section>
       <article class="wrapper space">
         <ul class="article-flex">
@@ -110,22 +111,25 @@
       <section class="wrapper space">
         <h2 class="header-title">Czym się zajmujemy</h2>
         <ul class="flex-wrap">
-          <li>
+          <li class="position">
             <img src="images/service/computer.jpg" alt="Ktoś pisze na kompuetrze" width="370" />
+            <div class="photo-description position-child">APLIKACJE KOMPUTEROWE</div>
           </li>
-          <li>
+          <li class="position">
             <img
               src="images/service/mobile.jpg"
               alt="Ktoś konfiguruje telefon komórkowy"
               width="370"
             />
+            <div class="photo-description position-child">APLIKACJE MOBILNE</div>
           </li>
-          <li>
+          <li class="position">
             <img
               src="images/service/tablet.jpg"
               alt="Ktoś wybiera kolor z palety na tablecie"
               width="370"
             />
+            <div class="photo-description position-child">ROZWIAZANIA GRAFICZNE</div>
           </li>
         </ul>
       </section>
@@ -363,5 +367,16 @@
         </div>
       </div>
     </footer>
+    <div class="backdrop hidden" data-modal>
+      <div class="modal">
+       <button class="modal-close" data-modal-close>
+        <img 
+        src="./images/close.svg"
+        alt="close button"
+        width="18"/>
+       </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
