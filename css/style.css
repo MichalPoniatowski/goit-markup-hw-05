@@ -263,9 +263,9 @@ a {
   cursor: pointer;
 }
 
-.hidden {
+.is-hidden {
   opacity: 0;
-  visibility: 0;
+  visibility: hidden;
   pointer-events: none;
   transform: scale(0);
 }
@@ -304,6 +304,7 @@ a {
   border-radius: 50%;
   position: absolute;
   top: 8px;
+  color: black;
   right: 8px;
   display: flex;
   justify-content: center;
