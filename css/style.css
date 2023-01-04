@@ -263,13 +263,6 @@ a {
   cursor: pointer;
 }
 
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transform: scale(0);
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -283,8 +276,14 @@ a {
   align-items: center;
   opacity: 1;
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 2s cubic-bezier(0.4, 0, 0.2, 1), opacity 2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden {
+  opacity: 0;
+  /* visibility: hidden; */
+  pointer-events: none;
+  transform: scale(0);
 }
 
 .modal {
@@ -332,7 +331,6 @@ a {
 }
 
 .billboard {
-  background-color: #2f303a;
   font-family: Roboto;
   font-size: 2.75rem;
   font-weight: 900;
@@ -342,6 +340,8 @@ a {
   color: rgb(255, 255, 255);
   max-width: 100%;
   padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
 }
 
 .header-title {
@@ -591,4 +591,13 @@ a {
   border-style: solid;
   border-width: 1px;
   border-radius: 4px;
+}
+
+.order-service:hover,
+.header-nav:hover,
+.social-icons:hover,
+.svg-color:hover,
+.company-icons:hover,
+.address:hover {
+  transition: 200ms;
 }
